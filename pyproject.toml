@@ -1,0 +1,14 @@
+[project]
+name = "rapidfetch"
+version = "1.0.0"
+description = "Modern system fetch tool"
+authors = [{name = "Elias"}]
+dependencies = ["psutil", "colorama"]
+
+[project.scripts]
+rapidfetch = "rapidfetch.main:main"
+rapidhomefetch = "rapidfetch.home:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
